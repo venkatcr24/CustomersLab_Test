@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+button{
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.m-top-0{
+    margin-top: 0;
+}
+
+.save-segment{
+    position: relative;
+    top:50%;
+    left:50%;
+    background-color: #5fd8da;
+    border:1px solid #fff;
+    color: #fff;
+}
+
+.overlay{   
+   position: fixed;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.5);
+   backdrop-filter: blur(8px);
+   display: flex;
+   justify-content: flex-end;
+}
+
+.modal-container{
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-top{
+    background-color: #5fd8da;
+}
+
+.modal-top h1{
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.modal-body{
+    height: 100%;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.modal-body input[type='text']{
+    height: 30px;
+    padding: 10px;
+}
+
+.modal-body select{
+    width: 90%;
+}
+
+.modal-body button{
+    width: 10%;
+    height: 20px;
+    background-color:#efebeb;
+    outline: none;
+    border: 0px;
+    color: grey;
+    cursor: pointer;
+}
+
+.modal-bottom{
+    width: 100%;
+    height: 80px;
+    background-color: #efebeb;
+    display: flex;
+    align-items: center;
+}
+
+.modal-bottom-button button{
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-px-2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modal-my-2{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .modal-container{
+        max-width: 100%;
+        width: 100%;
+    }
+}
